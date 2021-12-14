@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        {% if title %}
+            <title>{{ title }}</title>
+        {% else %}
+            <title>Whatever name you want.</title>
+        {% endif %}
+        Navigation:<br>
+        <a href="/home">Home</a> <a href="/login">Login</a> <a href="/logout">Logout</a>
+    </head>
+    <body>
+        <div>
+            {% block content %} {% endblock %}
+        </div>
+    </body>
+</html>
