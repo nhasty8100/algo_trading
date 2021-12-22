@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+    <head>
+        <h1>Register</h1>
+    </head>
+    <body>
+        <div>
+            <form action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
+                <p>
+                    {{ form.username.label }} {{ form.username(size=32) }}<br>
+                    {{ form.password.label }} {{ form.password(size=32) }}<br>
+                    {{ form.password_2.label }} {{ form.password_2(size=32) }}<br>
+                    {{ form.email.label }} {{ form.email(size=32) }}
+                <p>
+                <p>
+                    {{ form.submit() }}
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
+{% endblock %}
