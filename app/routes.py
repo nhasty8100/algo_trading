@@ -27,7 +27,7 @@ then build a function to do the logic, accept input, etc.
 def function():
 
 user render_template() to render html from templates folder
-formatting and design can go in static
+formatting and design can go in /static
 
 return render_template('content.html')
 
